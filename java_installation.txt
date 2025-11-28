@@ -1,0 +1,37 @@
+JAVA INSTALLATION STEPS ON WINDOWS
+
+1. Open browser and go to:
+   https://www.oracle.com/java/technologies/javase-downloads.html
+
+2. Download the latest JDK for Windows (x64 Installer).
+
+3. After download, double click the .exe file.
+
+4. Click Next and complete the installation process.
+
+5. Now set Environment Variables:
+
+   a) Open Control Panel
+   b) Click on System and Security
+   c) Click on System
+   d) Click on Advanced System Settings
+   e) Click Environment Variables
+
+6. Under System Variables, click New:
+   Variable Name: JAVA_HOME
+   Variable Value: Path where Java is installed (for example)
+   C:\Program Files\Java\jdk-21
+
+7. Now edit Path variable:
+   Add this:
+   %JAVA_HOME%\bin
+
+8. Click OK and close all windows.
+
+9. Verify installation:
+   Open Command Prompt and run:
+
+   java -version
+   javac -version
+
+10. If version appears, Java is successfully installed.
